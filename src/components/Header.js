@@ -1,5 +1,7 @@
 import React from 'react'
+import Img from 'react-image'
 
+const krisImg = './images/banner/IMG20190824183503.jpg';
 const Header = function () {
     return (
     <header id="home" class="header-area">
@@ -93,7 +95,7 @@ const Header = function () {
             </div>
             <div class="col-lg-6 offset-xl-1">
               <div class="header-image d-none d-lg-block">
-                <img src="./images/banner/IMG20190824183503.jpg" alt="Krishna" />
+                <Img src={krisImg} alt="Krishna" />
                 
               </div>
             </div>
