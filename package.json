@@ -2,15 +2,19 @@
   "name": "krishna-portfolio-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://krisrajaryan27.github.io",
   "dependencies": {
     "@material-ui/core": "^4.5.0",
     "@material-ui/icons": "^4.4.3",
+    "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
     "react-vertical-timeline-component": "^2.5.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,6 +47,6 @@
     "webpack-cli": "^3.3.9"
   },
   "keywords": [],
-  "author": "",
+  "author": "Krishna Verma",
   "license": "ISC"
 }
