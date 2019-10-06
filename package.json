@@ -2,7 +2,7 @@
   "name": "krishna-portfolio-app",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://krisrajaryan27.github.io/Krishna/",
+  "homepage": "https://krisrajaryan27.github.io/Portfolio",
   "dependencies": {
     "@material-ui/core": "^4.5.0",
     "@material-ui/icons": "^4.4.3",
