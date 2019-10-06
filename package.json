@@ -2,11 +2,10 @@
   "name": "krishna-portfolio-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://krisrajaryan27.github.io",
+  "homepage": "https://krisrajaryan27.github.io/Portfolio",
   "dependencies": {
     "@material-ui/core": "^4.5.0",
     "@material-ui/icons": "^4.4.3",
-    "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
@@ -14,8 +13,11 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "npm install",
-    "start": "npm start"
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +39,7 @@
   "devDependencies": {
     "@types/react": "^16.9.5",
     "@types/react-dom": "^16.9.1",
+    "gh-pages": "^2.1.1",
     "source-map-loader": "^0.2.4",
     "ts-loader": "^6.2.0",
     "typescript": "^3.6.3",
