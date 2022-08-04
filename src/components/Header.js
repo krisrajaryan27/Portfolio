@@ -88,7 +88,7 @@ const Header = function () {
                 <h4 class="sub-title">Hello, I’m</h4>
                 <h1 class="title">Krishna Verma</h1>
                 <p>Full Stack Developer</p>
-                <a class="main-btn" href="./resume/Krishna_Resume.pdf">
+                <a class="main-btn" href="./resume/Krishna_VisualCV_Resume.pdf">
                   Download Resume
                 </a>
               </div>
