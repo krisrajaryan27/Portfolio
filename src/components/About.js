@@ -141,7 +141,7 @@ const About = function () {
                   <h6 class="skill-title">Javascript, NodeJS</h6>
                   <div class="skill-percentage">
                     <div class="count-box counted">
-                      <span class="counter">70</span>
+                      <span class="counter">90</span>
                     </div>
                     %
                   </div>
@@ -157,7 +157,7 @@ const About = function () {
                   <h6 class="skill-title">ReactJS, Redux</h6>
                   <div class="skill-percentage">
                     <div class="count-box counted">
-                      <span class="counter">50</span>
+                      <span class="counter">70</span>
                     </div>
                     %
                   </div>
