@@ -15,7 +15,37 @@ const Timeline = function() {
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="Oct 2018 - Present"
+          date="Dec, 2020 - Dec, 2021"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">Lead Software Engineer</h3>
+          <p>Avataar.me</p>
+          <p>Bangalore, Karnataka, India - 560037</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Dec, 2020 - Dec, 2021"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
+          <p>Enquero Global</p>
+          <p>Bangalore, Karnataka, India - 560045</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Jan, 2020 - Nov, 2020"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<WorkIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">Senior Software Engineer</h3>
+          <p>Atheer Inc</p>
+          <p>Pune, Maharashtra, India - 411045</p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="Oct 2018 - Dec, 2019"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<WorkIcon />}
         >
