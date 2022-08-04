@@ -10,9 +10,9 @@ const About = function () {
               <h2 class="title">About Me</h2>
               <h4 class="about-title">Hi There! I'm Krishna Verma</h4>
               <p>
-                I am a competent & techno-savvy professional, offering more than 3 years of experience in Software Product 
+                I am a competent & techno-savvy professional, offering more than 6 years of experience in Software Product 
                 Development with a demonstrated history of working in the software industry. I am currently spearheading efforts 
-                with Talentica Software as Software Engineer-2 with experience in developing
+                with Avataar.me as Lead Software Engineer with experience in developing
                 back-end, front-end infrastructure and database designs for web applications. I am an achievement-driven,
                 problem solving professional with positive attitude targetting assignments in software development with
                 organisations. I work well under pressure and consistently meet deadlines and targets while delivering
@@ -27,13 +27,14 @@ const About = function () {
             <h5 class="about-title">Skills</h5>
               
                 <p>
-                * Strong Programming Skills and Back End Development experience in Java8, J2EE, NodeJS, ExpressJS along with various frameworks such as Struts2.x, Spring MVC, Spring Boot, Spring Data JPA, Hibernate.<br />
+                * Strong Programming Skills and Back End Development experience in Java8, J2EE, NodeJS along with various frameworks such as Struts2.x, Spring MVC, Spring Boot, Spring Data JPA, Hibernate, ExpressJS .<br />
                 * Have Front End Development exposure on HTML, CSS, JavaScript and its related libraries and frameworks like React JS, Angular JS, Redux with experience in GraphQL.<br />
-                * Well experienced in working with databases of RDBMS such as MySQL, Oracle Database, PostgreSQL and NoSQL DBs such as MongoDB and Amazon DynamoDB.<br />
-                * Well experienced in REST APIs and SOAP WebServices.<br /> 
-                * Have indexing exposure on Solr and caching on Redis.<br />
-                * Experience in working with AWS Services like Batch, SQS, SNS, EC2, DynamoDB.<br />
+                * Well experienced in working with databases of RDBMS such as MySQL, Oracle Database, PostgreSQL and NoSQL DBs such as MongoDB, Amazon DynamoDB and ELK Stack.<br />
+                * Well experienced in REST APIs, SOAP WebServices, gRPCs.<br /> 
+                * Have indexing exposure on Solr, Elastic Search and caching on Redis, Hazelcast.<br />
+                * Experience in working with AWS Services like Serverless Lambda, EC2, SES, Batch, SQS, SNS, Cloudwatch, Cognito, DynamoDB, Route53.<br />
                 * Deployment Automation Scripting experience with Ansible.<br />
+                * Continous Integration and Build Pipelines with Jenkins.<br />
                 * Containerization and Orchestration experience with Docker and Kubernetes.<br />
                 * Experience in Object Oriented Design and Design Patterns.<br />
                 * Expertise in Data Structures, Problem Solving, Optimizations and Algorithms.<br />
@@ -78,7 +79,7 @@ const About = function () {
                       <i class="lni-map-marker"></i>
                     </div>
                     <div class="info-text">
-                      <p><span>Location:</span> Pune, Maharashtra, India</p>
+                      <p><span>Location:</span> Bangalore, Karnataka, India</p>
                     </div>
                   </div>
                 </li>
