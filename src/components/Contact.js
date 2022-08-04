@@ -22,7 +22,7 @@ const Contact = function () {
               </div>
               <div class="contact-content">
                 <h6 class="contact-title">Address</h6>
-                <p>A2 - 501, Saarrthi Souvenir, Baner, Pune, Maharashtra, India - 4110045</p>
+                <p>22, Nandi Sunshine, Yemalur, Bangalore, Karnataka, India - 560037</p>
               </div>
             </div>
           </div>
