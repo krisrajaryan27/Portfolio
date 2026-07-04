@@ -2,56 +2,56 @@ import React from 'react';
 
 const Contact = function () {
     return (
-    <section id="contact" class="contact-area pt-125 pb-130 gray-bg">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="section-title text-center pb-25">
+    <section id="contact" className="contact-area pt-125 pb-130 gray-bg">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="section-title text-center pb-25">
               <h3>Get In Touch</h3>
               <p>
-                 Please do contact me for more details.
+                 Please contact me for senior engineering leadership, staff/principal engineer, and distributed systems opportunities.
               </p>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6 col-sm-7">
-            <div class="contact-box text-center mt-30">
-              <div class="contact-icon">
-                <i class="lni-map-marker"></i>
+        <div className="row justify-content-center">
+          <div className="col-lg-4 col-md-6 col-sm-7">
+            <div className="contact-box text-center mt-30">
+              <div className="contact-icon">
+                <i className="lni-map-marker"></i>
               </div>
-              <div class="contact-content">
-                <h6 class="contact-title">Address</h6>
-                <p>22, Nandi Sunshine, Yemalur, Bangalore, Karnataka, India - 560037</p>
+              <div className="contact-content">
+                <h6 className="contact-title">Location</h6>
+                <p>Bangalore, Karnataka, India</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-7">
-            <div class="contact-box text-center mt-30">
-              <div class="contact-icon">
-                <i class="lni-phone"></i>
+          <div className="col-lg-4 col-md-6 col-sm-7">
+            <div className="contact-box text-center mt-30">
+              <div className="contact-icon">
+                <i className="lni-phone"></i>
               </div>
-              <div class="contact-content">
-                <h6 class="contact-title">Phone</h6>
+              <div className="contact-content">
+                <h6 className="contact-title">Phone</h6>
                 <p>+91-7349782793</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 col-sm-7">
-            <div class="contact-box text-center mt-30">
-              <div class="contact-icon">
-                <i class="lni-envelope"></i>
+          <div className="col-lg-4 col-md-6 col-sm-7">
+            <div className="contact-box text-center mt-30">
+              <div className="contact-icon">
+                <i className="lni-envelope"></i>
               </div>
-              <div class="contact-content">
-                <h6 class="contact-title">Email</h6>
+              <div className="contact-content">
+                <h6 className="contact-title">Email</h6>
                 <p>krisv.nit16@gmail.com</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="section-title text-center pb-25">
-          <div class="col-md-12">
-          <a tabindex="0" class="main-btn" href="mailto:krisv.nit16@gmail.com"><span>Contact Me</span></a>
+        <div className="section-title text-center pb-25">
+          <div className="col-md-12">
+          <a tabIndex="0" className="main-btn" href="mailto:krisv.nit16@gmail.com"><span>Contact Me</span></a>
           </div>
         </div>
       </div>

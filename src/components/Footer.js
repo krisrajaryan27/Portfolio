@@ -3,49 +3,49 @@ import React from "react";
 const Footer = function() {
   return (
     <div>
-      <footer id="footer" class="footer-area">
-        <div class="footer-widget pt-130 pb-130">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
-                <div class="footer-content text-center">
-                  <p class="mt-">
-                    Please contact on the below mentioned details.
+      <footer id="footer" className="footer-area">
+        <div className="footer-widget pt-130 pb-130">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8">
+                <div className="footer-content text-center">
+                  <p className="mt-">
+                    Please contact me on the links below.
                   </p>
                   <ul>
                     <li>
                       <a href="https://www.linkedin.com/in/krishna-verma/">
-                        <i class="lni-linkedin-original"></i>
+                        <i className="lni-linkedin-original"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://github.com/krisrajaryan27">
-                        <i class="lni-github-original"></i>
+                        <i className="lni-github-original"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://stackoverflow.com/users/6619434/krishna-verma">
-                        <i class="lni-stackoverflow"></i>
+                        <i className="lni-stackoverflow"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://learningnirvana.home.blog/">
-                        <i class="lni-wordpress"></i>
+                        <i className="lni-wordpress"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://epistemophilicnirvana.blogspot.com/">
-                        <i class="lni-blogger"></i>
+                        <i className="lni-blogger"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://twitter.com/bakchod_nawab">
-                        <i class="lni-twitter-original"></i>
+                        <i className="lni-twitter-original"></i>
                       </a>
                     </li>
                     <li>
                       <a href="https://www.facebook.com/krisrajaryan">
-                        <i class="lni-facebook-original"></i>
+                        <i className="lni-facebook-original"></i>
                       </a>
                     </li>
                     
@@ -56,8 +56,8 @@ const Footer = function() {
           </div>
         </div>
       </footer>
-      <a href="Preloader" class="back-to-top">
-        <i class="lni-chevron-up"></i>
+      <a href="#home" className="back-to-top">
+        <i className="lni-chevron-up"></i>
       </a>
     </div>
   );

@@ -1,84 +1,79 @@
 import React from 'react';
 
+const skills = [
+  "Backend: Java 21, Scala, Node.js, Python, Spring WebFlux, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, Struts 2.x, Express, Django, FastAPI.",
+  "Architecture: distributed systems, domain-driven design, event-driven microservices, reactive programming, REST APIs, SOAP, gRPC, and GraphQL.",
+  "Frontend: React, Redux, TypeScript, JavaScript, Angular, Next.js, Nest.js, HTML, CSS, and reusable component systems.",
+  "Data: MySQL, Oracle, Postgres, CockroachDB, MongoDB, DynamoDB, Cassandra, Redis, Hazelcast, Memcache, Apache Solr, and Elasticsearch.",
+  "Cloud and DevOps: AWS, GCP, Azure, Docker, Kubernetes, Ansible, Chef, Jenkins, GitHub Actions, Maven, Gradle, NPM, and Yarn.",
+  "Messaging and observability: Kafka, Confluent Kafka, AWS SQS, RabbitMQ, Prometheus, Grafana, Datadog, New Relic, Splunk, and CloudWatch.",
+  "Testing and quality: JUnit 5, Mockito, Spock, Jest, Mocha, Sinon, debugging, performance tuning, and production incident ownership.",
+  "AI-assisted engineering: Cursor, Windsurf, JetBrains AI Assistant, Claude Code, and Amazon Q."
+];
+
+const skillBars = [
+  { title: "Distributed Systems", percentage: 95 },
+  { title: "Java, Spring, Reactive Services", percentage: 95 },
+  { title: "Cloud, Kubernetes, DevOps", percentage: 90 },
+  { title: "React, TypeScript, Node.js", percentage: 85 },
+  { title: "Data Platforms and Messaging", percentage: 90 }
+];
+
 const About = function () {
-    return (
-    <section id="about" class="about-area pt-125 pb-130">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="section-title text-center">
-              <h2 class="title">About Me</h2>
-              <h4 class="about-title">Hi There! I'm Krishna Verma</h4>
+  return (
+    <section id="about" className="about-area pt-125 pb-130">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
+            <div className="section-title text-center">
+              <h2 className="title">About Me</h2>
+              <h4 className="about-title">Hi There! I'm Krishna Verma</h4>
               <p>
-                I am a competent & techno-savvy professional, offering more than 6 years of experience in Software Product 
-                Development with a demonstrated history of working in the software industry. I am currently spearheading efforts 
-                with Avataar.me as Lead Software Engineer with experience in developing
-                back-end, front-end infrastructure and database designs for web applications. I am an achievement-driven,
-                problem solving professional with positive attitude targetting assignments in software development with
-                organisations. I work well under pressure and consistently meet deadlines and targets while delivering
-                high quality work.
+                I am a Senior Staff Software Engineer with experience across backend and full-stack product development,
+                large-scale distributed systems, and event-driven microservices in energy, e-commerce, fintech, telecom,
+                and SaaS domains. My recent work spans platform architecture, telemetry pipelines, cloud-native services,
+                team leadership, and high-impact migrations that improve reliability, latency, throughput, and infrastructure
+                cost at enterprise scale.
               </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="about-content mt-50">
-            <h5 class="about-title">Skills</h5>
-              
-                <p>
-                * Strong Programming Skills and Back End Development experience in Java8, J2EE, NodeJS along with various frameworks such as Struts2.x, Spring MVC, Spring Boot, Spring Data JPA, Hibernate, ExpressJS .<br />
-                * Have Front End Development exposure on HTML, CSS, JavaScript and its related libraries and frameworks like React JS, Angular JS, Redux with experience in GraphQL.<br />
-                * Well experienced in working with databases of RDBMS such as MySQL, Oracle Database, PostgreSQL and NoSQL DBs such as MongoDB, Amazon DynamoDB and ELK Stack.<br />
-                * Well experienced in REST APIs, SOAP WebServices, gRPCs.<br /> 
-                * Have indexing exposure on Solr, Elastic Search and caching on Redis, Hazelcast.<br />
-                * Experience in working with AWS Services like Serverless Lambda, EC2, SES, Batch, SQS, SNS, Cloudwatch, Cognito, DynamoDB, Route53.<br />
-                * Deployment Automation Scripting experience with Ansible.<br />
-                * Continous Integration and Build Pipelines with Jenkins.<br />
-                * Containerization and Orchestration experience with Docker and Kubernetes.<br />
-                * Experience in Object Oriented Design and Design Patterns.<br />
-                * Expertise in Data Structures, Problem Solving, Optimizations and Algorithms.<br />
-                * Strong debugging and analytical skills.<br />
-                * Well versed with Agile and Waterfall software development methodologies<br />
-                * Worked on different OS like Windows, Linux, Ubuntu, MacOSX.<br/>
-                </p>
-              <ul class="clearfix">
+        <div className="row">
+          <div className="col-lg-6">
+            <div className="about-content mt-50">
+              <h5 className="about-title">Skills</h5>
+              <ul className="skill-list">
+                {skills.map((skill) => (
+                  <li key={skill}>{skill}</li>
+                ))}
+              </ul>
+              <ul className="clearfix">
                 <li>
-                  <div class="single-info d-flex align-items-center">
-                    <div class="info-icon">
-                      <i class="lni-calendar"></i>
+                  <div className="single-info d-flex align-items-center">
+                    <div className="info-icon">
+                      <i className="lni-envelope"></i>
                     </div>
-                    <div class="info-text">
-                      <p><span>Date of birth:</span> 13 July 1994</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="single-info d-flex align-items-center">
-                    <div class="info-icon">
-                      <i class="lni-envelope"></i>
-                    </div>
-                    <div class="info-text">
+                    <div className="info-text">
                       <p><span>Email:</span> krisv.nit16@gmail.com</p>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="single-info d-flex align-items-center">
-                    <div class="info-icon">
-                      <i class="lni-phone-handset"></i>
+                  <div className="single-info d-flex align-items-center">
+                    <div className="info-icon">
+                      <i className="lni-phone-handset"></i>
                     </div>
-                    <div class="info-text">
+                    <div className="info-text">
                       <p><span>Phone:</span> +91-7349782793</p>
                     </div>
                   </div>
                 </li>
                 <li>
-                  <div class="single-info d-flex align-items-center">
-                    <div class="info-icon">
-                      <i class="lni-map-marker"></i>
+                  <div className="single-info d-flex align-items-center">
+                    <div className="info-icon">
+                      <i className="lni-map-marker"></i>
                     </div>
-                    <div class="info-text">
+                    <div className="info-text">
                       <p><span>Location:</span> Bangalore, Karnataka, India</p>
                     </div>
                   </div>
@@ -86,94 +81,32 @@ const About = function () {
               </ul>
             </div>
           </div>
-          <div class="col-xl-5 offset-xl-1 col-lg-6">
-            <div class="about-skills pt-25">
-              <div class="skill-item mt-25">
-                <div class="skill-header">
-                  <h6 class="skill-title">Java</h6>
-                  <div class="skill-percentage">
-                    <div class="count-box counted">
-                      <span class="counter">90</span>
+          <div className="col-xl-5 offset-xl-1 col-lg-6">
+            <div className="about-skills pt-25">
+              {skillBars.map((skill) => (
+                <div className="skill-item mt-25" key={skill.title}>
+                  <div className="skill-header">
+                    <h6 className="skill-title">{skill.title}</h6>
+                    <div className="skill-percentage">
+                      <div className="count-box counted">
+                        <span className="counter">{skill.percentage}</span>
+                      </div>
+                      %
                     </div>
-                    %
                   </div>
-                </div>
-                <div class="skill-bar">
-                  <div class="bar-inner">
-                    <div class="bar progress-line" data-width="80"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item mt-25">
-                <div class="skill-header">
-                  <h6 class="skill-title">Spring Boot, MVC, JPA</h6>
-                  <div class="skill-percentage">
-                    <div class="count-box counted">
-                      <span class="counter">80</span>
+                  <div className="skill-bar">
+                    <div className="bar-inner">
+                      <div className="bar progress-line" style={{ width: `${skill.percentage}%` }}></div>
                     </div>
-                    %
                   </div>
                 </div>
-                <div class="skill-bar">
-                  <div class="bar-inner">
-                    <div class="bar progress-line" data-width="60"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item mt-25">
-                <div class="skill-header">
-                  <h6 class="skill-title">HTML, CSS, SASS</h6>
-                  <div class="skill-percentage">
-                    <div class="count-box counted">
-                      <span class="counter">50</span>
-                    </div>
-                    %
-                  </div>
-                </div>
-                <div class="skill-bar">
-                  <div class="bar-inner">
-                    <div class="bar progress-line" data-width="50"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item mt-25">
-                <div class="skill-header">
-                  <h6 class="skill-title">Javascript, NodeJS</h6>
-                  <div class="skill-percentage">
-                    <div class="count-box counted">
-                      <span class="counter">90</span>
-                    </div>
-                    %
-                  </div>
-                </div>
-                <div class="skill-bar">
-                  <div class="bar-inner">
-                    <div class="bar progress-line" data-width="90"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="skill-item mt-25">
-                <div class="skill-header">
-                  <h6 class="skill-title">ReactJS, Redux</h6>
-                  <div class="skill-percentage">
-                    <div class="count-box counted">
-                      <span class="counter">70</span>
-                    </div>
-                    %
-                  </div>
-                </div>
-                <div class="skill-bar">
-                  <div class="bar-inner">
-                    <div class="bar progress-line" data-width="90"></div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
     </section>
-    );
-  }
+  );
+}
 
 export default About;

@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.skill-list {
+  margin-bottom: 25px;
+  padding-left: 18px;
+}
+
+.skill-list li,
+.timeline-highlights li {
+  color: #646f87;
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.timeline-highlights {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+.vertical-timeline-element-content .timeline-highlights {
+  list-style: disc;
+}
+
+.vertical-timeline-element-content .timeline-highlights li {
+  list-style: disc;
+}
