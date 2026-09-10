@@ -10,6 +10,9 @@ const Header = function () {
           <div className="row">
             <div className="col-lg-12">
               <nav className="navbar navbar-expand-lg">
+                <a className="navbar-brand page-scroll" href="#home">
+                  <strong>KV</strong>
+                </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="toggler-icon"></span>
                   <span className="toggler-icon"></span>
@@ -29,8 +32,13 @@ const Header = function () {
                       </a>
                     </li>
                     <li className="nav-item">
+                      <a className="page-scroll" href="#impact">
+                        Impact
+                      </a>
+                    </li>
+                    <li className="nav-item">
                       <a className="page-scroll" href="#timeline">
-                        Timeline
+                        Experience
                       </a>
                     </li>
                     <li className="nav-item">
@@ -85,18 +93,24 @@ const Header = function () {
           <div className="row align-items-center">
             <div className="col-xl-5 col-lg-6">
               <div className="header-content-right">
-                <h4 className="sub-title">Hello, I’m</h4>
+                <h4 className="sub-title">Senior Staff Software Engineer</h4>
                 <h1 className="title">Krishna Verma</h1>
-                <p>Senior Staff Software Engineer</p>
-                <a className="main-btn" href="./resume/Krishna_Verma_VisualCV_ResumeLatest.pdf">
-                  Download Resume
-                </a>
+                <p className="header-tagline">
+                  I build distributed systems that survive production. 12+ years turning fragile monoliths into resilient platforms handling 20,000+ events/sec.
+                </p>
+                <div className="header-cta">
+                  <a className="main-btn" href="#impact">
+                    See My Work
+                  </a>
+                  <a className="main-btn main-btn-2 header-btn-secondary" href="#contact">
+                    Get In Touch
+                  </a>
+                </div>
               </div>
             </div>
             <div className="col-lg-6 offset-xl-1">
               <div className="header-image d-none d-lg-block">
-                <Img src={krisImg} alt="Krishna" />
-                
+                <Img src={krisImg} alt="Krishna Verma" />
               </div>
             </div>
           </div>
@@ -107,10 +121,9 @@ const Header = function () {
               <div className="col-lg-12">
                 <div className="header-social-icon">
                   <ul>
-                    <li><a href="https://www.linkedin.com/in/krishna-verma/"><i className="lni-linkedin-original"></i></a></li>
-                    <li><a href="https://github.com/krisrajaryan27"><i className="lni-github-original"></i></a></li>
-                    <li><a href="https://stackoverflow.com/users/6619434/krishna-verma"><i className="lni-stackoverflow"></i></a></li>
-                    <li><a href="https://learningnirvana.home.blog/"><i className="lni-wordpress"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/krishna-verma/" target="_blank" rel="noopener noreferrer"><i className="lni-linkedin-original"></i></a></li>
+                    <li><a href="https://github.com/krisrajaryan27" target="_blank" rel="noopener noreferrer"><i className="lni-github-original"></i></a></li>
+                    <li><a href="https://stackoverflow.com/users/6619434/krishna-verma" target="_blank" rel="noopener noreferrer"><i className="lni-stackoverflow"></i></a></li>
                   </ul>
                 </div>
               </div>

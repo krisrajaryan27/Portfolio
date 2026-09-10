@@ -13,48 +13,49 @@ const workExperiences = [
     date: "Dec 2024 - Present",
     title: "Senior Staff Software Engineer",
     company: "Enphase Energy",
-    location: "Bangalore, Karnataka, India",
+    location: "Bangalore, India",
     highlights: [
-      "Leading migration from a legacy Ruby on Rails monolith to event-driven microservices using Java 21, Spring WebFlux, MongoDB, MySQL, Cassandra, AWS, Confluent Kafka, Docker, and Kubernetes.",
-      "Owns telemetry processing architecture for microcontrollers, PCUs, and Envoy devices, handling more than 20K reports per second across critical report types.",
-      "Delivered audit logs, UDP ping stabilization, performance, inventory, notification, and configuration reporting with major latency, TPS, and infrastructure-cost improvements.",
-      "Provides technical leadership for a 25-developer team across ENXT platform initiatives and hardware-oriented reporting systems."
+      "Architected monolith-to-microservices migration (Java 21, Spring WebFlux, Kafka, K8s on AWS), consolidating ~50 VMs and cutting infrastructure costs by 70%.",
+      "Designed telemetry platform ingesting 20K+ reports/sec across 10+ report types with sub-200ms p99 latency and zero data loss.",
+      "Drove core service SLA from 2% to 99%+ through systematic reliability engineering -- circuit breakers, connection pooling, and observability overhaul.",
+      "Led 25+ engineer cross-functional team; established ADRs, tech debt governance, and engineering excellence standards across 4 product teams.",
+      "Influenced $2M+ infrastructure investment decisions through platform modernization roadmaps presented to VP Engineering."
     ]
   },
   {
     date: "Dec 2021 - Dec 2024",
     title: "Lead Software Engineer",
     company: "Avataar.ai",
-    location: "Bangalore, Karnataka, India",
+    location: "Bangalore, India",
     highlights: [
-      "Directed e-commerce platform integrations with BigCommerce, Shopify, Wix, and WooCommerce for immersive 3D product experiences.",
-      "Engineered the Avataar Engine with MERN stack services, AWS Lambda, API Gateway, S3, SQS, and analytics infrastructure.",
-      "Designed microservices for user and team management, catalog, translation, work item, order, cart, payment, and adapter workflows.",
-      "Led a 20-developer team through product delivery, documentation, operational monitoring, and production-quality deployments."
+      "Architected multi-tenant e-commerce platform integrating Shopify, BigCommerce, Wix, and WooCommerce -- 500+ merchants, 99.9% uptime, P95 under 200ms.",
+      "Designed plugin-based integration architecture, reducing new platform onboarding from 8 weeks to 2 weeks (75% reduction).",
+      "Led 20+ engineers; established OKR framework and promotion track, developing 4 engineers into senior roles.",
+      "Implemented CI/CD pipelines reducing deployment cycle from 2 days to under 30 minutes, enabling 15+ production deploys/week."
     ]
   },
   {
-    date: "Dec 2018 - Sep 2021",
+    date: "Sep 2018 - Dec 2021",
     title: "Lead Software Engineer",
     company: "Talentica Software",
-    location: "Pune, Maharashtra, India",
+    location: "Pune, India",
     highlights: [
-      "Built microservices for financial document retrieval and AlphaSense search features with Java 8, Spring Boot, AWS S3, DynamoDB, Docker, and Kubernetes.",
-      "Developed entity-page and feed integrations using React, Redux, TypeScript, and Node.js.",
-      "Delivered SSO for a recruitment platform using Java, Spring Boot, Struts 2.x, SAML 2.0, AngularJS, and major identity providers.",
-      "Built AtheerAir platform services, customer dashboards, logging, user management, and manufacturing workflow capabilities."
+      "Architected document retrieval for AlphaSense (Elasticsearch, PostgreSQL) -- 60% throughput improvement on 10M+ document corpus with sub-second search.",
+      "Designed backend for Symphony encrypted collaboration platform -- 100K+ concurrent connections, sub-50ms message delivery.",
+      "Built enterprise SSO framework (SAML 2.0, Okta, ADFS) reducing auth integration from 6 weeks to 3 days per client.",
+      "Led 12 engineers; established code review practices and knowledge-sharing that improved team velocity by 25%."
     ]
   },
   {
-    date: "June 2015 - Dec 2018",
+    date: "Jun 2015 - Dec 2018",
     title: "Software Engineer",
-    company: "Mahindra Comviva Technologies",
-    location: "Bangalore, Karnataka, India",
+    company: "Mahindra Comviva",
+    location: "Bangalore, India",
     highlights: [
-      "Delivered telecom software products for clients across Indonesia, Bangladesh, and Vietnam.",
-      "Owned Loyalty Management Solution and IRIS deployments, production support, and customer-specific enhancements.",
-      "Improved backend throughput by implementing a plugin model that increased TPS by roughly 60%.",
-      "Built customer-care GUI features, reports, interfaces, and widgets for evolving telecom product requirements."
+      "Built loyalty management platform for telecom operators across Indonesia, Bangladesh, and Vietnam -- 50M+ subscribers, 10K+ TPS.",
+      "Designed processing framework increasing transaction throughput by 60% during peak campaigns.",
+      "Implemented database optimization strategies reducing average query response time by 50%.",
+      "Designed automated health check and alerting systems, cutting incident response from 4 hours to under 30 minutes."
     ]
   }
 ];
@@ -64,26 +65,14 @@ const educationItems = [
     date: "2011 - 2015",
     title: "Bachelor of Technology",
     subtitle: "Electronics and Communications Engineering",
-    details: ["CGPA - 8.32/10", "Motilal Nehru National Institute of Technology, Allahabad"]
-  },
-  {
-    date: "May 2011",
-    title: "Intermediate",
-    subtitle: "Maa Bharti Senior Secondary School, Kota, Rajasthan",
-    details: ["CBSE", "Percentage - 82.4%"]
-  },
-  {
-    date: "April 2009",
-    title: "Matriculation",
-    subtitle: "St. Xaviers School, Siddharth Nagar, U.P",
-    details: ["ICSE", "Percentage - 83.2%"]
+    details: ["CGPA: 8.32/10", "Motilal Nehru National Institute of Technology (MNNIT), Allahabad"]
   }
 ];
 
 const Timeline = function() {
   return (
     <div id="timeline">
-      <h3 className="section-title text-center">Timeline</h3>
+      <h3 className="section-title text-center">Experience</h3>
       <VerticalTimeline>
         {workExperiences.map((experience) => (
           <VerticalTimelineElement

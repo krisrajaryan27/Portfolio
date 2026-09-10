@@ -9,7 +9,9 @@ const Contact = function () {
             <div className="section-title text-center pb-25">
               <h3>Get In Touch</h3>
               <p>
-                 Please contact me for senior engineering leadership, staff/principal engineer, and distributed systems opportunities.
+                I am exploring Staff and Principal Engineer roles at companies solving hard
+                infrastructure problems at scale. If your team is building something that needs
+                to work at 3 AM on a Saturday without paging anyone, let's talk.
               </p>
             </div>
           </div>
@@ -22,18 +24,8 @@ const Contact = function () {
               </div>
               <div className="contact-content">
                 <h6 className="contact-title">Location</h6>
-                <p>Bangalore, Karnataka, India</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-7">
-            <div className="contact-box text-center mt-30">
-              <div className="contact-icon">
-                <i className="lni-phone"></i>
-              </div>
-              <div className="contact-content">
-                <h6 className="contact-title">Phone</h6>
-                <p>+91-7349782793</p>
+                <p>Bangalore, India</p>
+                <p className="contact-sub">Open to relocation</p>
               </div>
             </div>
           </div>
@@ -48,10 +40,21 @@ const Contact = function () {
               </div>
             </div>
           </div>
+          <div className="col-lg-4 col-md-6 col-sm-7">
+            <div className="contact-box text-center mt-30">
+              <div className="contact-icon">
+                <i className="lni-linkedin-original"></i>
+              </div>
+              <div className="contact-content">
+                <h6 className="contact-title">LinkedIn</h6>
+                <p><a href="https://www.linkedin.com/in/krishna-verma/" target="_blank" rel="noopener noreferrer">in/krishna-verma</a></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="section-title text-center pb-25">
+        <div className="section-title text-center mt-50">
           <div className="col-md-12">
-          <a tabIndex="0" className="main-btn" href="mailto:krisv.nit16@gmail.com"><span>Contact Me</span></a>
+            <a tabIndex="0" className="main-btn" href="mailto:krisv.nit16@gmail.com"><span>Contact Me</span></a>
           </div>
         </div>
       </div>

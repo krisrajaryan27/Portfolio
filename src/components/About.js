@@ -1,22 +1,34 @@
 import React from 'react';
 
 const skills = [
-  "Backend: Java 21, Scala, Node.js, Python, Spring WebFlux, Spring Boot, Spring MVC, Spring Data JPA, Spring Security, Struts 2.x, Express, Django, FastAPI.",
-  "Architecture: distributed systems, domain-driven design, event-driven microservices, reactive programming, REST APIs, SOAP, gRPC, and GraphQL.",
-  "Frontend: React, Redux, TypeScript, JavaScript, Angular, Next.js, Nest.js, HTML, CSS, and reusable component systems.",
-  "Data: MySQL, Oracle, Postgres, CockroachDB, MongoDB, DynamoDB, Cassandra, Redis, Hazelcast, Memcache, Apache Solr, and Elasticsearch.",
-  "Cloud and DevOps: AWS, GCP, Azure, Docker, Kubernetes, Ansible, Chef, Jenkins, GitHub Actions, Maven, Gradle, NPM, and Yarn.",
-  "Messaging and observability: Kafka, Confluent Kafka, AWS SQS, RabbitMQ, Prometheus, Grafana, Datadog, New Relic, Splunk, and CloudWatch.",
-  "Testing and quality: JUnit 5, Mockito, Spock, Jest, Mocha, Sinon, debugging, performance tuning, and production incident ownership.",
-  "AI-assisted engineering: Cursor, Windsurf, JetBrains AI Assistant, Claude Code, and Amazon Q."
+  {
+    category: "Languages & Frameworks",
+    items: "Java (8-21), Spring Boot, Spring WebFlux, Spring Cloud, Scala, Python, TypeScript, Node.js, Express.js"
+  },
+  {
+    category: "Architecture & Design",
+    items: "Microservices, Event-Driven Architecture, CQRS, Domain-Driven Design, Distributed Consensus, Reactive Programming"
+  },
+  {
+    category: "Data & Messaging",
+    items: "PostgreSQL, MySQL, MongoDB, Cassandra, DynamoDB, Redis, Elasticsearch, Apache Kafka, RabbitMQ, AWS SQS/SNS"
+  },
+  {
+    category: "Cloud & Infrastructure",
+    items: "AWS (ECS, EKS, Lambda, S3, API Gateway, CloudFront), Docker, Kubernetes, Terraform, GitHub Actions, Jenkins"
+  },
+  {
+    category: "Observability & Reliability",
+    items: "OpenTelemetry, Grafana, Prometheus, Datadog, Circuit Breakers, Bulkhead Isolation, SLO/SLI Definition"
+  }
 ];
 
 const skillBars = [
-  { title: "Distributed Systems", percentage: 95 },
-  { title: "Java, Spring, Reactive Services", percentage: 95 },
-  { title: "Cloud, Kubernetes, DevOps", percentage: 90 },
-  { title: "React, TypeScript, Node.js", percentage: 85 },
-  { title: "Data Platforms and Messaging", percentage: 90 }
+  { title: "Distributed Systems & Platform Architecture", percentage: 95 },
+  { title: "Java, Spring Boot, Reactive Services", percentage: 95 },
+  { title: "Cloud Infrastructure & Kubernetes", percentage: 90 },
+  { title: "Data Platforms, Kafka, Messaging", percentage: 90 },
+  { title: "Technical Leadership & Mentorship", percentage: 90 }
 ];
 
 const About = function () {
@@ -27,13 +39,14 @@ const About = function () {
           <div className="col-lg-8">
             <div className="section-title text-center">
               <h2 className="title">About Me</h2>
-              <h4 className="about-title">Hi There! I'm Krishna Verma</h4>
-              <p>
-                I am a Senior Staff Software Engineer with experience across backend and full-stack product development,
-                large-scale distributed systems, and event-driven microservices in energy, e-commerce, fintech, telecom,
-                and SaaS domains. My recent work spans platform architecture, telemetry pipelines, cloud-native services,
-                team leadership, and high-impact migrations that improve reliability, latency, throughput, and infrastructure
-                cost at enterprise scale.
+              <p className="about-summary">
+                Senior Staff Software Engineer with 12+ years of experience architecting high-scale
+                distributed systems across energy tech, e-commerce, fintech, and telecom. I specialize
+                in platform modernization -- migrating monoliths to event-driven microservices,
+                building telemetry pipelines that process 20K+ events/sec, and turning around service
+                reliability from 2% to 99%+ SLA. I lead cross-functional engineering teams of 25+,
+                drive technical strategy at the organizational level, and care about engineering
+                cultures where code review is mentorship, not gatekeeping.
               </p>
             </div>
           </div>
@@ -41,30 +54,22 @@ const About = function () {
         <div className="row">
           <div className="col-lg-6">
             <div className="about-content mt-50">
-              <h5 className="about-title">Skills</h5>
+              <h5 className="about-title">Technical Expertise</h5>
               <ul className="skill-list">
                 {skills.map((skill) => (
-                  <li key={skill}>{skill}</li>
+                  <li key={skill.category}>
+                    <strong>{skill.category}:</strong> {skill.items}
+                  </li>
                 ))}
               </ul>
-              <ul className="clearfix">
+              <ul className="clearfix mt-30">
                 <li>
                   <div className="single-info d-flex align-items-center">
                     <div className="info-icon">
-                      <i className="lni-envelope"></i>
+                      <i className="lni-briefcase"></i>
                     </div>
                     <div className="info-text">
-                      <p><span>Email:</span> krisv.nit16@gmail.com</p>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="single-info d-flex align-items-center">
-                    <div className="info-icon">
-                      <i className="lni-phone-handset"></i>
-                    </div>
-                    <div className="info-text">
-                      <p><span>Phone:</span> +91-7349782793</p>
+                      <p><span>Company:</span> Enphase Energy</p>
                     </div>
                   </div>
                 </li>
@@ -74,7 +79,27 @@ const About = function () {
                       <i className="lni-map-marker"></i>
                     </div>
                     <div className="info-text">
-                      <p><span>Location:</span> Bangalore, Karnataka, India</p>
+                      <p><span>Location:</span> Bangalore, India</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="single-info d-flex align-items-center">
+                    <div className="info-icon">
+                      <i className="lni-graduation"></i>
+                    </div>
+                    <div className="info-text">
+                      <p><span>Education:</span> B.Tech ECE, NIT Allahabad (8.32/10)</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div className="single-info d-flex align-items-center">
+                    <div className="info-icon">
+                      <i className="lni-envelope"></i>
+                    </div>
+                    <div className="info-text">
+                      <p><span>Email:</span> krisv.nit16@gmail.com</p>
                     </div>
                   </div>
                 </li>
