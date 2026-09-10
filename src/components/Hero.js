@@ -41,7 +41,7 @@ const Hero = function () {
         <div className="hero-image">
           <div className="hero-image-wrapper">
             <img
-              src="./images/banner/IMG20190824183503.jpg"
+              src="./images/banner/krishna-headshot.jpg"
               alt="Krishna Verma"
             />
           </div>
