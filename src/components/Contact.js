@@ -1,64 +1,53 @@
-import React from 'react';
+import React from "react";
 
 const Contact = function () {
-    return (
-    <section id="contact" className="contact-area pt-125 pb-130 gray-bg">
+  return (
+    <section id="contact" className="contact">
       <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-8">
-            <div className="section-title text-center pb-25">
-              <h3>Get In Touch</h3>
-              <p>
-                I am exploring Staff and Principal Engineer roles at companies solving hard
-                infrastructure problems at scale. If your team is building something that needs
-                to work at 3 AM on a Saturday without paging anyone, let's talk.
-              </p>
+        <div className="section-header">
+          <div className="section-label">Contact</div>
+          <h2 className="section-title">Let's Talk</h2>
+          <p className="section-subtitle">
+            I am exploring Staff and Principal Engineer roles at companies solving
+            hard infrastructure problems at scale. If your team is building
+            something that needs to work at 3 AM on a Saturday without paging
+            anyone, I would like to hear about it.
+          </p>
+        </div>
+
+        <div className="contact-grid">
+          <div className="contact-card">
+            <div className="contact-icon">&#9993;</div>
+            <div className="contact-card-title">Email</div>
+            <div className="contact-card-value">
+              <a href="mailto:krisv.nit16@gmail.com">krisv.nit16@gmail.com</a>
             </div>
+          </div>
+          <div className="contact-card">
+            <div className="contact-icon">&#127760;</div>
+            <div className="contact-card-title">LinkedIn</div>
+            <div className="contact-card-value">
+              <a href="https://www.linkedin.com/in/krishna-verma/" target="_blank" rel="noopener noreferrer">
+                in/krishna-verma
+              </a>
+            </div>
+          </div>
+          <div className="contact-card">
+            <div className="contact-icon">&#128205;</div>
+            <div className="contact-card-title">Location</div>
+            <div className="contact-card-value">Bangalore, India</div>
+            <div className="contact-card-sub">Open to relocation</div>
           </div>
         </div>
-        <div className="row justify-content-center">
-          <div className="col-lg-4 col-md-6 col-sm-7">
-            <div className="contact-box text-center mt-30">
-              <div className="contact-icon">
-                <i className="lni-map-marker"></i>
-              </div>
-              <div className="contact-content">
-                <h6 className="contact-title">Location</h6>
-                <p>Bangalore, India</p>
-                <p className="contact-sub">Open to relocation</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-7">
-            <div className="contact-box text-center mt-30">
-              <div className="contact-icon">
-                <i className="lni-envelope"></i>
-              </div>
-              <div className="contact-content">
-                <h6 className="contact-title">Email</h6>
-                <p>krisv.nit16@gmail.com</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4 col-md-6 col-sm-7">
-            <div className="contact-box text-center mt-30">
-              <div className="contact-icon">
-                <i className="lni-linkedin-original"></i>
-              </div>
-              <div className="contact-content">
-                <h6 className="contact-title">LinkedIn</h6>
-                <p><a href="https://www.linkedin.com/in/krishna-verma/" target="_blank" rel="noopener noreferrer">in/krishna-verma</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="section-title text-center mt-50">
-          <div className="col-md-12">
-            <a tabIndex="0" className="main-btn" href="mailto:krisv.nit16@gmail.com"><span>Contact Me</span></a>
-          </div>
+
+        <div className="contact-cta">
+          <a href="mailto:krisv.nit16@gmail.com" className="btn btn-primary">
+            Send Me an Email
+          </a>
         </div>
       </div>
     </section>
-    );
-  }
-  export default Contact;
+  );
+};
+
+export default Contact;
